@@ -1,0 +1,22 @@
+# Files
+-------------------------------------------------------------------------------------------------------------------
+What is file? 
+Files are name location on disk to store information
+They are used to store data permanently
+Data is stored in non-volatile memory
+We can retrive data whenever required
+--------------------------------------------------------------------------------------------------------------------
+Types of Files?
+Text Files : Stores data in the form of Characters. It is used to store data and strings.
+eg: .txt file, Json file
+
+Binary Files : Stores data in the form of bytes (group of 8-bits)
+eg: audio file, video file, image file, pdf file.
+-------------------------------------------------------------------------------------------------------------------
+What is File Handling?
+File Handling Means:-
+- Opening a file
+- Performing some Operations on it
+- Closing a file
+-------------------------------------------------------------------------------------------------------------------
+
