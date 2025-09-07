@@ -4,19 +4,88 @@ What is file?
 Files are name location on disk to store information
 They are used to store data permanently
 Data is stored in non-volatile memory
-We can retrive data whenever required
+We can retrive data whenever required.
 --------------------------------------------------------------------------------------------------------------------
 Types of Files?
 Text Files : Stores data in the form of Characters. It is used to store data and strings.
-eg: .txt file, Json file
+eg: .txt, .docx, .log etc.
 
-Binary Files : Stores data in the form of bytes (group of 8-bits)
-eg: audio file, video file, image file, pdf file.
+Binary Files : Stores data in the form of bytes (group of 8-bits).
+eg: .mp4, .mov, .png, .jpeg etc.
 -------------------------------------------------------------------------------------------------------------------
 What is File Handling?
 File Handling Means:-
 - Opening a file
 - Performing some Operations on it
-- Closing a file
+- Closing a file.
 -------------------------------------------------------------------------------------------------------------------
+Opening a File
+Python provides a build-in function open() to open a file.
 
+Syntax: f = open(filename, mode='r',)
+
+filename :- file to be accessed
+
+mode :- access mode (purpose of opening file.)
+(if mode not specified it opens file in read mode)
+
+f :- file handler, file pointer
+(f points at start of the file)
+-------------------------------------------------------------------------------------------------------------------
+Different Types of Modes:
+-----------------------------------------------------------------------------------
+Character              Meaning                                                     |
+'r'            open for reading (default)                                          |
+'r+'           open for reading and writing (no truncate),it overwrite from start  |
+'w'            open for writing, truncating the file first                         |
+'w+'           open for reading and writing (truncate and write)                   |
+'x'            create a new file and open it for writing                           |
+'a'            open for writing, appending to the end of the file if it exists     |
+'a+'           open for reading and writing (appends to the end)                   |
+'b'            binary mode                                                         |
+'t'            text mode (default)                                                 |
+'+'            open a disk file for updating (reading and writing)                 |
+-----------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
+Reading a File
+
+data = f.read()            <- reads the entire file
+date = f.readline()        <- reads one line at a time 
+
+eg. for reading line one at a time 
+f = open("demo.txt","r")
+line1 = f.readline()        <- reads first line
+print(line1)
+f.close()
+-------------------------------------------------------------------------------------------------------------------
+Writing a File
+Writing a file refers to process of transferring data from a programer's memory to a persistence storage location,
+typically a file on a computer's file system.
+This allows data to be saved and accessed even after program terminates.
+
+f = open("demo.txt","w")           <- write mode
+f.write("This is a new line")      <- overwrites the entire file
+
+f = open("demo.txt","w")           <- append mode
+f.write("This is a new line")      <- adds to the file
+-------------------------------------------------------------------------------------------------------------------
+with Syntax
+
+with open("demo.txt","r") as f:
+      data = f.read()
+      print(data)
+
+with automatically closes the file 
+-------------------------------------------------------------------------------------------------------------------
+Deleting a file 
+
+using the os module
+Module is a file written by another programmer that generally has a function we can use.
+
+import os
+os.remove(filename)
+
+eg. 
+import os 
+os.remove("demo.txt")
+-------------------------------------------------------------------------------------------------------------------
