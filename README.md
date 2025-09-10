@@ -1,5 +1,5 @@
 # Python_Programming_for_DevOps
-This is the repository for learning Python from Intermediate to Advanced Level for DevOps.
+This is the repository for learning Python from Beginner to Advanced Level for DevOps.
 
 # File_Handling
 It gives detailed description on file handling with python
