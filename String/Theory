@@ -67,5 +67,4 @@ Searching → find(), count(), startswith(), endswith()
 Replacing/splitting → replace(), split(), join()
 Checking type → isdigit(), isalpha(), isalnum(), isspace()s.
 format(*args, **kwargs) – String formatting.
-
 format_map(mapping) – Formatting with dict directly.
