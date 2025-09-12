@@ -1,6 +1,6 @@
-Functions Include
-
-1.Function definition (def)
+Functions Directory will include
+-----------------------------------------------------------------
+1.Function definition (def) 
 2.Function call
 3.Parameters (positional, default, keyword, *args, **kwargs)
 4.Return values (single, multiple)
