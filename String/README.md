@@ -103,10 +103,10 @@ print(msg)
 
 ✅ Summary of Most Used Functions
 ---------------------------------------------------------------------------------------------------------
-Case conversion → lower(), upper(), title(), capitalize()
-Trimming → strip(), lstrip(), rstrip()
-Searching → find(), count(), startswith(), endswith()
-Replacing/splitting → replace(), split(), join()
-Checking type → isdigit(), isalpha(), isalnum(), isspace()s.
-format(*args, **kwargs) – String formatting.
-format_map(mapping) – Formatting with dict directly.
+1. Case conversion → lower(), upper(), title(), capitalize()
+2. Trimming → strip(), lstrip(), rstrip()
+3. Searching → find(), count(), startswith(), endswith()
+4. Replacing/splitting → replace(), split(), join()
+5. Checking type → isdigit(), isalpha(), isalnum(), isspace()s.
+6. format(*args, **kwargs) – String formatting.
+7. format_map(mapping) – Formatting with dict directly.
