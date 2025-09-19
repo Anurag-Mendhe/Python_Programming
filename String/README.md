@@ -51,15 +51,15 @@ join(iterable) → Join elements with separator
 
 🔹 5. Checking Types
 ---------------------------------------------------------------------------------------------------------
-isdigit() → All digits?
-isalpha() → All letters?
-isalnum() → Letters + digits?
-isspace() → Only spaces?
-isupper() → checks for upper
-islower() → checks for lower
-"123".isdigit()    # True
-"hello".isalpha()  # True
-"hello123".isalnum() # True
+1. isdigit() → All digits?
+2. isalpha() → All letters?
+3. isalnum() → Letters + digits?
+4. isspace() → Only spaces?
+5. isupper() → checks for upper
+6. islower() → checks for lower
+a. "123".isdigit()    # True
+b. "hello".isalpha()  # True
+c. "hello123".isalnum() # True
 
 🔹6. .format()
 ---------------------------------------------------------------------------------------------------------
